@@ -18,7 +18,6 @@ setuptools_info = {
 		'numpy',
 		'scipy'],
 	'classifiers': [
-		"Programming Language :: Python :: 3",
 		"License :: OSI Approved :: MIT License",
 		"Operating System :: OS Independent",
 		"Intended Audience :: Science/Research",
@@ -26,11 +25,5 @@ setuptools_info = {
 	    ],
 }
 
-
-if sys.version_info[0] >= 3:
-    #
-    # Augment for Python 3 setuptools:
-    #
-    setuptools_info['long_description_content_type'] = 'text/x-rst'
 
 setuptools.setup(**setuptools_info)

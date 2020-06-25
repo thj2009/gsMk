@@ -10,11 +10,11 @@ import numpy as np
 import itertools
 from collections import Counter
 from sklearn import linear_model
+from sklearn.model_selection import KFold
+
 from .order_scheme import total_combination
 from .poly import Hermite, Plain, Legendre
-from joblib import Parallel, delayed
-from sklearn.model_selection import KFold
-from train_construct import build_xy
+from .train_construct import build_xy
 
 class PCE:
     '''

@@ -5,7 +5,6 @@ Build Training dataset give orderlist and polynomial type
 import numpy as np
 
 from .poly import Hermite, Plain, Legendre
-from joblib import Parallel, delayed
 
 def build_xy(order_list, poly, x, y, xdev=[], dydx=[]):
     '''

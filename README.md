@@ -6,10 +6,10 @@
 * Scikit-learn: used for solving the linear regression
 
 # Installation
-1. ```
-   git clone . 
-   ```
-2. 
+```
+git clone https://github.com/thj2009/gsMk.git
+pip install gsMk/ 
+```
 
 # Lisence
 MIT Lisence

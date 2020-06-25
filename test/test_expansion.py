@@ -2,6 +2,7 @@
 test the polynomial expansion
 """
 
+import pytest
 import numpy as np
 from gsMk import PCE
 from gsMk.GSA.train_construct import build_xy
@@ -65,6 +66,6 @@ def test_expand_time1():
     XX, _ = build_xy(orders, 'Plain', x, [])
     toc = time.time()
     print('Expansion time = %.2f min' % ((toc - tic) / 60.))
-    print XX.shape
+    print(XX.shape)
     assert 1 == 1
 
